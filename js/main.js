@@ -27,3 +27,55 @@ singers.sort(function(a, b) {
   });
 
   console.log(singers)
+
+  // Korrektur
+
+  // singers.sort(function (a, b) {
+  //   let nameA = a.name;
+  //   console.log("this is a-name: " + nameA);
+  //   let nameB = b.name;
+  //   console.log("this is b-name: " + nameB);
+  //   if (nameA < nameB) {
+  //     return -1;
+  //   }
+  //   if (nameA > nameB) {
+  //     return 1;
+  //   }
+  //   return 0;
+  // });
+  // console.log(singers);
+  
+  
+  
+  
+  
+  
+  // Elaine (supercode)  15:32 Uhr
+  // Variante2:
+  // function compare(a, b) {
+  //   const nameA = a.name;
+  //   console.log("nameA is " + nameA);
+  //   const nameB = b.name;
+  //   console.log("nameB is " + nameB);
+  //   let comparison = 0;
+  //   if (nameA > nameB) {
+  //     comparison = 1;
+  //   } else if (nameA < nameB) {
+  //     comparison = -1;
+  //   }
+  //   return comparison;
+  // }
+  // console.log(singers.sort(compare));
+  // 15:34 Uhr
+  // Variante3:
+  // let singersSorted = []
+  // singersSorted = singers.sort((elt1, elt2) => {
+  //     if (elt1.name < elt2.name) {
+  //         return -1
+  //     } else if (elt1.name > elt2.name) {
+  //         return 1
+  //     } else {
+  //         return 0
+  //     }
+  // })
+  // console.log(singersSorted)
